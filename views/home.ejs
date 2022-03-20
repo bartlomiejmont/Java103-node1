@@ -1,0 +1,19 @@
+<h2>Hello !</h2>
+
+// 1. wypunktowanie wszystkich imion w liście
+// 2. kazde napis przyjmuje kolor na podstawie eyeColor
+// 3. ustaw styl na podstawie
+<ul>
+    <% for(let i=0; i<data.length; i++) { %>
+        <li class=<%= data[i].isActive ? "isActive" : "isNotActive" %> style="color:<%= data[i].eyeColor %>" > <%= data[i].name %> </li>
+    <% } %>
+</ul>
+
+<style>
+.isActive {
+border-style: solid;
+}
+.isNotActive{
+border-style: dotted;
+}
+</style>
